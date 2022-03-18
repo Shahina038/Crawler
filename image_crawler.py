@@ -20,7 +20,10 @@ def get_amirkhan(site_url):
 
 def main():
     amir = get_amirkhan("https://www.gettyimages.in/photos/aamir-khan-actor")
-    
+    head = "https://www.gettyimages.in"
+    for i in amir:
+        print(head+i,
+              "\n")
 
 
 if __name__ == "__main__":
