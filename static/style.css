@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
 * {
-  background: #e6eaee;
   font-family: 'Poppins', sans-serif;
 }
-::-webkit-scrollbar {
-  width: 20px;
+pre {
+  font-family: 'Poppins', sans-serif;
 }
-.navbar {
+.nav-bar {
   background-color: rgb(255, 255, 255);
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
   height: 93px;
+  margin: 0;
 }
 .heading {
   display: contents;
@@ -22,7 +22,7 @@
   color: rgb(45, 45, 45);
   background: transparent;
 }
-.lyrics {
+.lyrics_h {
   color: #467fb9;
   background: transparent;
 }
@@ -31,38 +31,46 @@
   background: transparent;
   padding-top: 17px;
 }
-a:hover {
-  color: #467fb9;
-}
-a,
-a:active,
-a:focus {
-  text-decoration: none;
-  color: inherit;
-}
-.lyrics_para {
-  max-width: 50em;
-  justify-content: center;
-  display: grid;
-}
-h1,
-h4 {
-  text-align: center;
-}
-.list-box {
-  border: 1px solid rgb(138, 138, 138);
-  border-radius: 3px;
-  min-width: 30rem;
+.artistbox {
+  min-width: 20rem;
+  border: 1.5px solid grey;
+  border-radius: 5px;
   margin-bottom: 2px;
-  padding-left: 5px;
+  padding-left: 3px;
+  cursor: pointer;
 }
-.list-box:hover {
+.artistbox:hover {
   background-color: #467fb9;
 }
-ul {
-  justify-content: center;
-  display: grid;
+.songbox {
+  min-width: 20rem;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding-left: 3px;
+  cursor: pointer;
 }
-li.current{
-  background-color: bisque;
+.songbox:hover {
+  background-color: #467fb9;
+}
+h4 {
+  margin-left: 37px;
+}
+h4.lhead {
+  margin-left: 0;
+}
+center {
+  margin-top: 16px;
+}
+li.current {
+  background-color: #467fb9;
+  min-width: 20rem;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding-left: 3px;
+  color: #fff;
+}
+div.col-5 {
+  padding-left: 55px;
 }
